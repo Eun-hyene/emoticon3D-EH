@@ -24,22 +24,22 @@ const config = {
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
     {
-      label: "GitHub",
+      label: "",
       url: "https://github.com/Vagr9K/gatsby-material-starter",
       iconClassName: "fa fa-github"
     },
     {
-      label: "Twitter",
+      label: "내3D모델",
       url: "https://twitter.com/Vagr9K",
       iconClassName: "fa fa-twitter"
     },
     {
-      label: "Email",
+      label: "예약하기",
       url: "mailto:vagr9k@gmail.com",
       iconClassName: "fa fa-envelope"
     }
-  ],
-  copyright: "Copyright © 2019. Material User" // Copyright string for the footer of the website and RSS feed.
+  ],//
+  // copyright: "Copyright © 2019. Material User" // Copyright string for the footer of the website and RSS feed.
 };
 
 // Validate
