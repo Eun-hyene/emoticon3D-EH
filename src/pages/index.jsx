@@ -5,7 +5,6 @@ import Layout from "../layout";
 import PostListing from "../components/PostListing";
 import SEO from "../components/SEO";
 import config from "../../data/SiteConfig";
-import { BottomNavigation, FontIcon } from "react-md";
 
 class Index extends React.Component {
   render() {
@@ -19,40 +18,6 @@ class Index extends React.Component {
           </Helmet>
           <SEO postEdges={postEdges} />
           <PostListing postEdges={postEdges} />
-          <BottomNavigation
-            links={[
-              {
-                label: "모델검색",
-                icon: <FontIcon>search</FontIcon>
-              },
-              {
-                label: "내3D모델",
-                icon: <FontIcon>favorite</FontIcon>
-              },
-              {
-                label: "예약하기",
-                icon: <FontIcon>place</FontIcon>
-              }
-            ]}
-            dynamic={false}
-            onNavChange={activeIndex => {
-              const title = links[activeIndex].label;
-              let children;
-              switch (activeIndex) {
-                case 1:
-                  children = <Favorites key="favorites" />;
-                  break;
-                case 2:
-                  children = <Nearby key="nearby" />;
-                  break;
-                default:
-                  children = <Recent key="recent" />;
-              }
-
-              this.setState({ title, children });
-            }}
-          />
-          ;
         </div>
       </Layout>
     );

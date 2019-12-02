@@ -18,7 +18,6 @@ class queryWrapper extends Component {
                     id
                     resolutions {
                       base64
-                      tracedSVG
                       aspectRatio
                       width
                       height
