@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Card from "react-md/lib/Cards/Card";
 import CardText from "react-md/lib/Cards/CardText";
 import Helmet from "react-helmet";
-
 import Layout from "../layout";
 import config from "../../data/SiteConfig";
 
@@ -37,5 +36,4 @@ class AboutPage2 extends Component {
     );
   }
 }
-
 export default AboutPage2;
