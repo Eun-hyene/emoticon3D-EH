@@ -6,6 +6,9 @@ import config from "../../data/SiteConfig";
 import "./index.scss";
 import "./global.scss";
 
+import BottomNav from '../components/BottomNav';
+
+
 export default class MainLayout extends React.Component {
   render() {
     const { children } = this.props;
@@ -16,6 +19,7 @@ export default class MainLayout extends React.Component {
             <meta name="description" content={config.siteDescription} />
           </Helmet>
           {children}
+          <BottomNav />
         </div>
       </Navigation>
     );
